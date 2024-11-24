@@ -9,33 +9,118 @@ html, body {
     box-sizing: border-box;
   }
 
-/* ========== Estilos Header ==========*/
+/* ========== Estilos Header con GRIDS ==========*/
 
-/* header */
-header{
-    background-color: #009c8c;
+/*Estilos Bloque Superior*/
+.header-sup {
+  background-color: #30C0B1; /* Verde agua */
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
 }
+
+/* Estilos del bloque Medio */
+.header-med {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Logo - Buscador - Botones */
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  padding: 30px;
+}
+
+/* Buscador */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #30C0B1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Botones */
+.acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.acciones button {
+  padding: 5px 10px;
+  background-color: #30C0B1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos del bloque inferior */
+.header-inf {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.header-inf a {
+  text-decoration: none;
+  color: #30C0B1;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.header-inf a:hover {
+  color: #00796b; /* Un verde más oscuro */
+}
+/* header */
+/* header{
+    background-color: #009c8c;
+} */
 
 /* header logo */
-header .logo{
+/* header .logo{
     width: 100px;
     padding: 30px;
-}
+} */
 
 /* header menu */
-.menu{
+/* .menu{
     display:flex;
     list-style-type: none;
     padding: 20px;
     margin: 20px;
     color:#fff;
     
-}
+} */
 
 /* header menu li */
-.menu li{
+/* .menu li{
       padding: 20px;
-  }
+  } */
 
 
 /* ========== Estilos Main ==========*/
