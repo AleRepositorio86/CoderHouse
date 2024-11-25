@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- banner + menu de navegacion -->
     <header>
-        <!-- logo -->
-        <img class="logo" src="../img/logo.png">   
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="quienessomos.html">Quienes Somos</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <!-- Bloque Superior -->
+        <div class="header-sup">
+            <p>📧 contacto@misitioweb.com | ☎️ +56 9 1234 5678  </p>
+        </div>
+        <!-- Bloque Medio-->
+        <div class="header-med">
+            <div class="logo"><img class="logo" src="../img/logo.png"></div>
+            <div class="search-bar">
+              <input type="text" placeholder="Buscar...">
+              <button>🔍</button>
+            </div>
+            <div class="acciones">
+              <button>Login</button>
+              <button>Carrito 🛒</button>
+            </div>
+            <div class="acciones_movil">
+                <button>👤</button>
+                <button>🛒</button>
+              </div>
+        </div>
+    
+        <!-- Bloque Inferior -->
+        <nav class="header-inf">
+            <a href="../index.html">Inicio</a>
+            <a href="quienessomos.html">Quienes Somos</a>
+            <a href="productos.html">Productos</a>
+            <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
 
@@ -30,25 +48,45 @@
      </main>
 
      <!-- pie de pagina -->
-     <footer>
-        <div class="footer-izq">
+     <footer class="contenedor-footer">
+             <!-- Bloque superior -->
+    <div class="footer-sup">
+        <p>📧 contacto@misitioweb.com | ☎️ +56 9 1234 5678  </p>
+    </div>
+    <!-- Bloque medio -->
+    <div class="footer-med">
+        <div class="footer-columna">
             <img class="logo" src="../img/logo.png"> 
-          </div>
-         
-
-
-        <div class="social-icons footer-center">
+            <!-- <h3>Sobre Nosotros</h3>
+            <p>Descubre más sobre nuestra misión, visión y valores.</p> -->
+        </div>
+        <div class="footer-columna">
+            <!-- <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul> -->
+            <h3>Redes Sociales</h3>
+            <p>Síguenos en:</p>
+            <p>
+            
             <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
             <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
             <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
-            <p>Todos los derechos reservados</p>
-          </div>
-         
-          <div class="footer-der">
+            </p>
+            
+        </div>
+        <div class="footer-columna">
             <p><strong>Correo:</strong> contacto@misitioweb.com</p>
             <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
             <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 - 18:00</p>
-          </div>
+        </div>
+    </div>
+    <!-- Bloque inferior -->
+    <div class="footer-inf">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </div>
         
       </footer>
 </body>
