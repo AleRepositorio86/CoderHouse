@@ -37,20 +37,20 @@ html, body {
 }
 
 /* Buscador */
-.search-bar {
+.busqueda {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-bar input {
+.busqueda input {
   width: 80%;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.search-bar button {
+.busqueda button {
   padding: 5px 10px;
   margin-left: 5px;
   background-color: #30C0B1;
@@ -112,7 +112,7 @@ html, body {
     display: none;
   }
 
-  .search-bar input {
+  .busqueda input {
     width: 200px; /* Buscar ocupa todo el ancho disponible */
     
   }

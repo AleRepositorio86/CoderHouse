@@ -6,6 +6,47 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+       
+    main {
+    
+    margin: 20px;
+    margin-left: 110px;
+    
+  }
+    
+        .card-header {
+          background-color: #30C0B1;
+          color: white;
+        }
+    
+        .btn-primary {
+          background-color: #30C0B1;
+          border: none;
+        }
+    
+        .btn-primary:hover {
+          background-color: #00796b;
+        }
+    
+        .form-label {
+          color: #30C0B1;
+          font-weight: bold;
+        }
+    
+        .form-control:focus {
+          border-color: #30C0B1;
+          box-shadow: 0 0 0 0.25rem rgba(48, 192, 177, 0.25);
+        }
+
+        .logo {
+            width: 150px;
+            padding: 30px;
+            }
+
+     
+      </style>
 </head>
 <body>
     <!-- banner + menu de navegacion -->
@@ -17,7 +58,7 @@
         <!-- Bloque Medio-->
         <div class="header-med">
             <div class="logo"><img class="logo" src="../img/logo.png"></div>
-            <div class="search-bar">
+            <div class="busqueda">
               <input type="text" placeholder="Buscar...">
               <button>🔍</button>
             </div>
@@ -43,8 +84,40 @@
 
     <!-- contenido  -->
      <main>
-        <h1>Contacto</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente harum sit sint beatae doloremque, asperiores quidem sed necessitatibus impedit illo. Iste iusto vero pariatur veritatis cum minima debitis amet atque.</p>
+        <div class="container">
+            <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="card shadow-sm">
+              <div class="card-header text-center">
+                <h2>Contáctanos</h2>
+              </div>
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Escribe tu correo" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Escribe el asunto" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                  </div>
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
      </main>
 
      <!-- pie de pagina -->
@@ -89,5 +162,7 @@
     </div>
         
       </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
