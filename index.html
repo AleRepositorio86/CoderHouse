@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
     <!-- banner + menu de navegacion -->
@@ -17,7 +17,7 @@
         <!-- Bloque Medio-->
         <div class="header-med">
             <div class="logo"><img class="logo" src="./img/logo.png"></div>
-            <div class="search-bar">
+            <div class="busqueda">
               <input type="text" placeholder="Buscar...">
               <button>🔍</button>
             </div>
@@ -25,6 +25,10 @@
               <button>Login</button>
               <button>Carrito 🛒</button>
             </div>
+            <div class="acciones_movil">
+                <button>👤</button>
+                <button>🛒</button>
+              </div>
         </div>
 
         <!-- Bloque Inferior -->
@@ -51,16 +55,68 @@
     </header>
 
     <!-- contenido  -->
-     <main>
-        
+     <main class="contenedor-main">
+        <section class="columna-izq">
+            <h2>Conoce nuestras Ofertas</h2>
+            <p>Conoce mas acerca nuestras ofertas </p>
+            <button>Más Información</button>
+        </section>
+        <section class="columna-med">
+            <h1>Bienvenido</h1>
+            <p>Descubre lo mejor que tenemos para ofrecer. Explora nuestras secciones y encuentra lo que necesitas.</p>
+            <button>Más Información</button>
+        </section>
+        <section class="colunma-der">
+            <h2>Servicios</h2>
+            <p>Consulta los servicios que ponemos a tu disposición.</p>
+            <button>Más Información</button>
+        </section>
         <!-- <h1>Bienvenidosss a Tienda de Mascotas Online</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente harum sit sint beatae doloremque, asperiores quidem sed necessitatibus impedit illo. Iste iusto vero pariatur veritatis cum minima debitis amet atque.</p> -->
         
      </main>
 
      <!-- pie de pagina -->
-      <footer>
-        <div class="footer-izq">
+      <footer class="contenedor-footer">
+    <!-- Bloque superior -->
+    <div class="footer-sup">
+        <p>📧 contacto@misitioweb.com | ☎️ +56 9 1234 5678  </p>
+    </div>
+    <!-- Bloque medio -->
+    <div class="footer-med">
+        <div class="footer-columna">
+            <img class="logo" src="./img/logo.png"> 
+            <!-- <h3>Sobre Nosotros</h3>
+            <p>Descubre más sobre nuestra misión, visión y valores.</p> -->
+        </div>
+        <div class="footer-columna">
+            <!-- <h3>Enlaces</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul> -->
+            <h3>Redes Sociales</h3>
+            <p>Síguenos en:</p>
+            <p>
+            
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+            </p>
+            
+        </div>
+        <div class="footer-columna">
+            <p><strong>Correo:</strong> contacto@misitioweb.com</p>
+            <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+            <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+        </div>
+    </div>
+    <!-- Bloque inferior -->
+    <div class="footer-inf">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </div>
+        <!-- <div class="footer-izq">
             <img class="logo" src="./img/logo.png"> 
         </div>
          
@@ -75,7 +131,7 @@
             <p><strong>Correo:</strong> contacto@misitioweb.com</p>
             <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
             <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 - 18:00</p>
-        </div>
+        </div> -->
         
       </footer>
 </body>
