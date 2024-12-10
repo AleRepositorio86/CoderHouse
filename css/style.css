@@ -1,3 +1,4 @@
+@import 'animate.css';
 html, body {
   height: 100%;
   display: flex;
@@ -14,6 +15,7 @@ html, body {
   text-align: center;
   padding: 5px 0;
   font-size: 14px;
+  font-family: "Quicksand", sans-serif;
 }
 @media (max-width: 480px) {
   .header-sup {
@@ -108,6 +110,7 @@ html, body {
   padding: 10px 0;
   gap: 20px;
   border-top: 1px solid #ddd;
+  font-family: "Quicksand", sans-serif;
 }
 .header-inf a {
   text-decoration: none;
@@ -129,10 +132,11 @@ html, body {
 main {
   padding: 20px;
   max-width: 1200px;
-  margin: 20px auto;
+  margin-left: 90px;
   background-color: white;
   border-radius: 8px;
   flex: 1;
+  font-family: "Quicksand", sans-serif;
 }
 
 h1, h2 {
@@ -156,6 +160,29 @@ button {
 }
 button:hover {
   background-color: #00796b;
+}
+
+.card-header {
+  background-color: #30C0B1 !important;
+  color: white !important;
+}
+
+.btn-primary {
+  background-color: #5B42A8 !important;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3 !important;
+}
+
+.form-label {
+  color: #30C0B1 !important;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: #30C0B1 !important;
+  box-shadow: 0 0 0 0.25rem rgba(48, 192, 177, 0.25);
 }
 
 /* Grid */
@@ -246,24 +273,88 @@ button:hover {
   background-color: #0056b3;
 }
 
+.caja-animacion {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+}
+
+.faq {
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+.faq-titulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2em;
+  color: #30C0B1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.faq-descripcion {
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faq-item {
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+.faq-item h3 {
+  font-size: 1.5em;
+  color: #30C0B1;
+  margin-bottom: 10px;
+}
+.faq-item p {
+  font-size: 1em;
+  color: black;
+  margin-bottom: 10px;
+}
+.faq-item p strong {
+  color: #30C0B1;
+}
+.faq-item p a {
+  color: #30C0B1;
+  text-decoration: underline;
+}
+.faq-item p a:hover {
+  text-decoration: none;
+}
+.faq-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.faq-item ul li {
+  margin-bottom: 5px;
+}
+
 /* Footer */
 .contenedor-footer {
   background-color: white;
-  border-top: 5px solid #30c0b1;
-  color: #333;
+  border-top: 5px solid #30C0B1;
+  color: black;
   text-align: center;
+  font-family: "Quicksand", sans-serif;
   /* Bloque superior */
   /* Bloque medio */
   /* Bloque inferior */
   /* Responsivo */
 }
-.contenedor-footer-sup {
-  background-color: #30c0b1;
+.contenedor-footer .footer-sup {
+  background-color: #30C0B1;
   color: white;
   padding: 10px 0;
   font-size: 14px;
 }
-.contenedor-footer-med {
+.contenedor-footer .footer-med {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -271,28 +362,28 @@ button:hover {
   background-color: #1B2631;
   color: white;
 }
-.contenedor-footer-med .footer-columna h3 {
+.contenedor-footer .footer-med .footer-columna h3 {
   margin-bottom: 10px;
-  color: #30c0b1;
+  color: #30C0B1;
 }
-.contenedor-footer-med .footer-columna p {
+.contenedor-footer .footer-med .footer-columna p {
   color: white;
 }
-.contenedor-footer-med .footer-columna p strong {
-  color: #30c0b1;
+.contenedor-footer .footer-med .footer-columna p strong {
+  color: #30C0B1;
 }
-.contenedor-footer-med .footer-columna ul {
+.contenedor-footer .footer-med .footer-columna ul {
   list-style: none;
   padding: 0;
 }
-.contenedor-footer-med .footer-columna ul li {
+.contenedor-footer .footer-med .footer-columna ul li {
   margin-bottom: 8px;
 }
-.contenedor-footer-med .footer-columna ul li a {
+.contenedor-footer .footer-med .footer-columna ul li a {
   color: white;
 }
-.contenedor-footer-inf {
-  background-color: #f4f4f4;
+.contenedor-footer .footer-inf {
+  background-color: white;
   padding: 10px 0;
   font-size: 14px;
   color: #666;
