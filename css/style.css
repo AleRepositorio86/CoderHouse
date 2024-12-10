@@ -212,9 +212,22 @@ button:hover {
 @media (max-width: 768px) {
   .contenedor-main {
     grid-template-columns: 1fr;
+    margin-right: 70px;
+    justify-items: center;
   }
   .columna-med {
     order: -1;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+/* Responsivo */
+@media (max-width: 768px) {
+  .caja-animacion {
+    grid-template-columns: 1fr;
+    margin-right: 70px;
+    justify-items: center;
   }
 }
 /* Grilla de Productos */
@@ -224,6 +237,12 @@ button:hover {
   gap: 20px;
   max-width: 1200px;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .grilla-productos {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 .cuadro-producto {
