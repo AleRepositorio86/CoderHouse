@@ -1,0 +1,18 @@
+// Mixin para botones
+@mixin button-style($mixcolor-principal: $color-principal, $mixcolor-secundario: $color-secundario) {
+    padding: $padding-small $padding-medium;
+    background-color: $mixcolor-principal;
+    color: $mixcolor-secundario;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  // Mixin para media query móvil
+  @mixin mobile-only {
+    @media (max-width: $mobile-breakpoint) {
+      @content;
+    }
+  }
+  
+  
