@@ -1,76 +1,79 @@
-/* ========== Estilos Body ==========*/
-/* body */
 html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* ========== Estilos Header con GRIDS ==========*/
-
-/*Estilos Bloque Superior*/
+/* Bloque Superior */
 .header-sup {
-  background-color: #30C0B1; /* Verde agua */
+  background-color: #30C0B1;
   color: white;
   text-align: center;
   padding: 5px 0;
   font-size: 14px;
 }
+@media (max-width: 480px) {
+  .header-sup {
+    font-size: 12px;
+    padding: 3px 0;
+  }
+}
 
-/* Estilos del bloque Medio */
+/* Bloque Medio */
 .header-med {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Logo - Buscador - Botones */
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding: 10px;
   background-color: white;
   border-bottom: 1px solid #ddd;
 }
 
-/* Logo */
 .logo {
   width: 100px;
   padding: 30px;
 }
+@media (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}
 
-/* Buscador */
 .busqueda {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .busqueda input {
   width: 80%;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-
+@media (max-width: 480px) {
+  .busqueda input {
+    width: 200px;
+  }
+}
 .busqueda button {
   padding: 5px 10px;
-  margin-left: 5px;
   background-color: #30C0B1;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 /* Botones */
 .acciones {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5px;
 }
-
-.acciones_movil {
- display: none;
-}
-
 .acciones button {
   padding: 5px 10px;
   background-color: #30C0B1;
@@ -79,8 +82,25 @@ html, body {
   border-radius: 4px;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .acciones {
+    display: none;
+  }
+}
 
-/* Estilos del bloque inferior */
+.acciones_movil {
+  display: none;
+}
+@media (max-width: 480px) {
+  .acciones_movil {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+/* Bloque Inferior */
 .header-inf {
   display: flex;
   justify-content: center;
@@ -89,125 +109,65 @@ html, body {
   gap: 20px;
   border-top: 1px solid #ddd;
 }
-
 .header-inf a {
   text-decoration: none;
   color: #30C0B1;
   font-size: 16px;
   transition: color 0.3s ease;
 }
-
 .header-inf a:hover {
-  color: #00796b; /* Un verde más oscuro */
+  color: #00796b;
 }
-
-/*Moviles*/
-@media (max-width: 480px){
-  .header-sup {
-    font-size: 12px;
-    padding: 3px 0;
-  }
-
-  .logo{
-    display: none;
-  }
-
-  .busqueda input {
-    width: 200px; /* Buscar ocupa todo el ancho disponible */
-    
-  }
-
-  .acciones {
-    display: none;
-  }
-
-  .acciones_movil {
-     display: flex; 
-     justify-content: flex-end;
-     gap: 5px;
-     padding: 5px;
-  }
-
+@media (max-width: 480px) {
   .header-inf {
-    flex-wrap: wrap; /* Asegurar que los enlaces no se desborden */
-    gap: 10px; /* Reducir espacio entre enlaces */
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
-/* header */
-/* header{
-    background-color: #009c8c;
-} */
-
-/* header logo */
-/* header .logo{
-    width: 100px;
-    padding: 30px;
-} */
-
-/* header menu */
-/* .menu{
-    display:flex;
-    list-style-type: none;
-    padding: 20px;
-    margin: 20px;
-    color:#fff;
-    
-} */
-
-/* header menu li */
-/* .menu li{
-      padding: 20px;
-  } */
-
-
-/* ========== Estilos Main ==========*/
-/* main */
+/* Main */
 main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #fff;
-    border-radius: 8px;
-    flex: 1; 
-  }
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  flex: 1;
+}
 
-  h1, h2 {
-    margin-bottom: 10px;
-    color: #30c0b1; /* Color verde para los títulos */
+h1, h2 {
+  margin-bottom: 10px;
+  color: #30C0B1;
 }
 
 p {
-  color: #333;
+  color: black;
   margin-bottom: 15px;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #30c0b1;
+  background-color: #30C0B1;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
-
 button:hover {
-  background-color: #28a393; /* Verde más oscuro al pasar el ratón */
+  background-color: #00796b;
 }
 
-/* Diseño de Grid */
+/* Grid */
 .contenedor-main {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Tres columnas: la central es más ancha */
-  gap: 20px; /* Espaciado entre columnas */
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Estilo de las columnas */
 .columna-izq,
 .columna-med,
 .colunma-der {
@@ -221,213 +181,127 @@ button:hover {
   text-align: center;
 }
 
-/* Responsivo Movil */
+/* Responsivo */
 @media (max-width: 768px) {
   .contenedor-main {
-      grid-template-columns: 1fr; /* Una sola columna en Moviles */
+    grid-template-columns: 1fr;
   }
-
   .columna-med {
-      order: -1; /* Mostrar la columna central primero */
+    order: -1;
   }
 }
-
-
-/* grilla de productos */
- .grilla-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    padding: 20px;
+/* Grilla de Productos */
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-/* cuadro de cada producto */
 .cuadro-producto {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-
-/* hover cuadro-producto */
 .cuadro-producto:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-/* Imagen del producto */
 .imagen-producto img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-/* Detalles del producto */
 .info-producto {
-    padding: 15px;
+  padding: 15px;
 }
 
-/* titulo del producto */
 .titulo-producto {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
-/* precio del producto */
 .precio-producto {
-    font-size: 16px;
-    color: #007bff;
-    margin: 5px 0;
+  font-size: 16px;
+  color: #007bff;
+  margin: 5px 0;
 }
 
-/* Botón añadir producto */
 .boton-anadir {
-    display: inline-block;
-    background-color: #5B42A8;
-    color: #ffffff;
-    padding: 10px 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-
-/* hover boton añadir */
-.boton-anadir:hover {
-    background-color: #0056b3;
-}
-
-
-/* ========== Estilos Footer ==========*/
-
-a {
-  color: #30c0b1;
+  display: inline-block;
+  background-color: #5B42A8;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
   text-decoration: none;
+  font-size: 14px;
 }
-
-a:hover {
-  text-decoration: underline;
+.boton-anadir:hover {
+  background-color: #0056b3;
 }
 
 /* Footer */
 .contenedor-footer {
   background-color: white;
-  border-top: 5px solid #30c0b1; /* Línea superior */
+  border-top: 5px solid #30c0b1;
   color: #333;
   text-align: center;
+  /* Bloque superior */
+  /* Bloque medio */
+  /* Bloque inferior */
+  /* Responsivo */
 }
-
-/* Bloque superior */
-.footer-sup {
-  background-color: #30c0b1; /* Verde similar al header */
+.contenedor-footer-sup {
+  background-color: #30c0b1;
   color: white;
   padding: 10px 0;
   font-size: 14px;
 }
-
-/* Bloque medio */
-.footer-med {
+.contenedor-footer-med {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px 40px;
-  background-color: #1B2631; /* Gris oscuro que contrasta con el verde */
+  background-color: #1B2631;
   color: white;
 }
-
-.footer-columna h3 {
+.contenedor-footer-med .footer-columna h3 {
   margin-bottom: 10px;
-  color: #30c0b1; /* Verde para los títulos */
+  color: #30c0b1;
 }
-
-.footer-columna p {
+.contenedor-footer-med .footer-columna p {
   color: white;
 }
-
-.footer-columna ul {
+.contenedor-footer-med .footer-columna p strong {
+  color: #30c0b1;
+}
+.contenedor-footer-med .footer-columna ul {
   list-style: none;
   padding: 0;
 }
-
-.footer-columna ul li {
+.contenedor-footer-med .footer-columna ul li {
   margin-bottom: 8px;
 }
-
-.footer-columna ul li a {
-  color: white; /* Blanco para los enlaces */
+.contenedor-footer-med .footer-columna ul li a {
+  color: white;
 }
-
-.footer-columna p strong{
-  color: #30c0b1;
-}
-/* .footer-columna ul li a:hover {
-  color: #30c0b1;
-} */
-
-/* Bloque inferior */
-.footer-inf {
-  background-color: #f4f4f4; /* Gris claro */
+.contenedor-footer-inf {
+  background-color: #f4f4f4;
   padding: 10px 0;
   font-size: 14px;
   color: #666;
 }
-
-/* Responsivo */
 @media (max-width: 768px) {
-  .footer-med {
-      grid-template-columns: 1fr; /* Una sola columna */
-      gap: 10px;
+  .contenedor-footer-med {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
 
-
-
-   /* Footer */
-   /* footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #009c8c;
-    color: #fff;
-    padding: 20px;
-    flex-wrap: wrap;
-  } */
-  
-  /* Sección Izquierda: Logo */
-  /* .footer-izq {
-    display: flex;
-    align-items: center;
-  } */
-
-  /* footer .logo{
-    width: 100px;
-    padding: 30px;
-} */
-
-  /* .footer-izq .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  } */
-  
-/* Sección Central: Redes Sociales y Derechos */
-      /* .footer-center {
-        text-align: center;
-      } */
-
-
-/* Sección Derecha: Información de Contacto */
-    /* .footer-der {
-        text-align: right;
-      }
-  
-      .footer-der p {
-        margin: 5px 0;
-      } */
-   
-
-
- 
+/*# sourceMappingURL=style.css.map */

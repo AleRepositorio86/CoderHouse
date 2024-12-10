@@ -1,0 +1,312 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+/* Bloque Superior */
+.header-sup {
+  background-color: $color-principal;
+  color: $color-texto-blanco;
+  text-align: center;
+  padding: $padding-small 0;
+  font-size: $font-size-medium;
+
+  @include mobile-only {
+    font-size: $font-size-small;
+    padding: 3px 0;
+  }
+}
+
+/* Bloque Medio */
+.header-med {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: $padding-medium;
+  background-color: $color-texto-blanco;
+  border-bottom: 1px solid $color-bordes;
+}
+
+.logo {
+  width: 100px;
+  padding: $padding-large;
+
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    width: 80%;
+    padding: $padding-small;
+    border: 1px solid $color-bordes;
+    border-radius: 4px;
+
+    @include mobile-only {
+      width: $input-width-mobile;
+    }
+  }
+
+  button {
+    @include button-style;
+    margin-left: $padding-small;
+  }
+}
+
+/* Botones */
+.acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: $padding-small;
+
+  button {
+    @include button-style;
+  }
+
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.acciones_movil {
+  display: none;
+
+  @include mobile-only {
+    display: flex;
+    justify-content: flex-end;
+    gap: $padding-small;
+    padding: $padding-small;
+  }
+}
+
+/* Bloque Inferior */
+.header-inf {
+  display: flex;
+  justify-content: center;
+  background-color: $color-texto-blanco;
+  padding: $padding-medium 0;
+  gap: 20px;
+  border-top: 1px solid $color-bordes;
+
+  a {
+    text-decoration: none;
+    color: $color-principal;
+    font-size: $font-size-large;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-hover-principal;
+    }
+  }
+
+  @include mobile-only {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+
+/* Main */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: $color-secundario;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  h1, h2 {
+    margin-bottom: 10px;
+    color: $color-principal;
+  }
+  
+  p {
+    color: $color-texto-negro;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color:$color-principal;
+    color: $color-secundario;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    // @include transition(background-color, 0.3s);
+  
+    &:hover {
+      background-color: $color-hover-principal;
+    }
+  }
+  
+  /* Grid */
+  .contenedor-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .columna-izq,
+  .columna-med,
+  .colunma-der {
+    background-color: $color-secundario;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .columna-med {
+    text-align: center;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .contenedor-main {
+      grid-template-columns: 1fr;
+    }
+  
+    .columna-med {
+      order: -1;
+    }
+  }
+  
+  /* Grilla de Productos */
+  .grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .cuadro-producto {
+    background-color: $color-secundario;
+    border: 1px solid $color-bordes;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    // @include transition(transform, 0.3s);
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .imagen-producto img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info-producto {
+    padding: 15px;
+  }
+  
+  .titulo-producto {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .precio-producto {
+    font-size: 16px;
+    color: $color-azul;
+    margin: 5px 0;
+  }
+  
+  .boton-anadir {
+    display: inline-block;
+    background-color: $color-morado;
+    color: $color-secundario;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    // @include transition(background-color, 0.3s);
+  
+    &:hover {
+      background-color: $color-hover-boton;
+    }
+  }
+
+
+
+
+  /* Footer */
+.contenedor-footer {
+  background-color: white;
+  border-top: 5px solid #30c0b1;
+  color: #333;
+  text-align: center;
+
+  /* Bloque superior */
+  &-sup {
+    background-color: #30c0b1;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  /* Bloque medio */
+  &-med {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: $color-base;
+    color: white;
+
+    .footer-columna {
+      h3 {
+        margin-bottom: 10px;
+        color: #30c0b1;
+      }
+
+      p {
+        color: white;
+
+        strong {
+          color: #30c0b1;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 8px;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  /* Bloque inferior */
+  &-inf {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    &-med {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+}
