@@ -132,7 +132,8 @@ html, body {
 main {
   padding: 20px;
   max-width: 1200px;
-  margin-left: 90px;
+  width: 100%;
+  margin: 20px auto;
   background-color: white;
   border-radius: 8px;
   flex: 1;
@@ -222,14 +223,6 @@ button:hover {
     margin: 0 auto;
   }
 }
-/* Responsivo */
-@media (max-width: 768px) {
-  .caja-animacion {
-    grid-template-columns: 1fr;
-    margin-right: 70px;
-    justify-items: center;
-  }
-}
 /* Grilla de Productos */
 .grilla-productos {
   display: grid;
@@ -237,12 +230,6 @@ button:hover {
   gap: 20px;
   max-width: 1200px;
   padding: 20px;
-}
-@media (max-width: 768px) {
-  .grilla-productos {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
 }
 
 .cuadro-producto {
