@@ -117,7 +117,8 @@
 main {
     padding: 20px;
     max-width: 1200px;
-    margin-left: 90px;
+    width: 100%;
+    margin:20px auto;
     background-color: $color-secundario;
     border-radius: 8px;
     flex: 1;
@@ -212,24 +213,6 @@ main {
     margin: 0 auto; 
     }
   }
-
-    /* Responsivo */
-    @media (max-width: 768px) {
-      .caja-animacion {
-        grid-template-columns: 1fr;
-        margin-right: 70px;
-        justify-items: center; 
-        
-        
-      }
-    
-      // .columna-med {
-      //   order: -1;
-      //   width: 90%; 
-      // max-width: 100%; 
-      // margin: 0 auto; 
-      // }
-    }
   
   /* Grilla de Productos */
   .grilla-productos {
@@ -238,11 +221,6 @@ main {
     gap: 20px;
     max-width: 1200px;
     padding: 20px;
-
-    @media (max-width: 768px){
-      grid-template-columns: 1fr;
-      gap:15px;
-    }
   }
   
   .cuadro-producto {
